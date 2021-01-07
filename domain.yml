@@ -12,6 +12,8 @@ intents:
 - affirm
 - chitchat
 - stop
+- request_travel
+- form_in_city
 entities:
 - city
 responses:
@@ -21,6 +23,7 @@ responses:
   - text: 嗯嗯，还需要什么我能够帮助您的呢？
   utter_answer_greet:
   - text: 您好！请问我可以帮到您吗？
+  - text: 您好！很高兴为您服务,我有什么可以帮您？
   - text: 您好！很高兴为您服务。请说出您要查询的功能？
   utter_answer_goodbye:
   - text: 再见
@@ -28,20 +31,38 @@ responses:
   - text: 虽然我有万般舍不得，但是天下没有不散的宴席~祝您安好！
   - text: 期待下次再见！
   - text: 嗯嗯，下次需要时随时记得我哟~
+  - text: 886
+  - text: 再见，记得想我哦
+  - text: 拜拜，欢迎下次再见哦
   - text: see you!
   utter_answer_deny:
   - text: 主人，您不开心吗？不要离开我哦
+  - text: 小芯太笨了，又惹主人生气了
   - text: 怎么了，主人？
   utter_answer_thanks:
   - text: 嗯呢。不用客气~
   - text: 这是我应该做的，主人~
   - text: 嗯嗯，合作愉快！
+  - text: 不用客气 :)
+  - text: 不客气哈，都是老朋友了 :)
   utter_answer_whoareyou:
   - text: 您好！我是小芯呀，您的AI智能助理
+  - text: 您好！我是您的AI智能助理，小芯~
+  - text: 您好！小芯为您服务！
   utter_answer_whattodo:
-  - text: 您好！很高兴为您服务，我目前只支持查询天气哦。
+  - text: 您好！很高兴为您服务，我目前只支持查询旅游景点哦。
+  - text: 您好！很高兴为您服务，小芯可以为您查询旅游景点哦。
   utter_answer_stop:
-  - text: 您好！很高兴为您服务，我目前只支持查询天气哦。
+  - text: 请问您还要继续？
+  - text: 请问您还要继续接下来的操作？
+  utter_ask_city:
+  - text: 请问您要查询哪一个城市的景点？
+  utter_default:
+  - text: 没听懂,请换个说法？
+  - text: 小芯太笨了，没听懂您的意思？
+  utter_chitchat:
+  - text: 呃呃呃呃呃
+  - text: 您这是在尬聊吗？
 actions:
 - utter_answer_affirm
 - utter_answer_deny
