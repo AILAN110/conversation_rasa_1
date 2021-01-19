@@ -183,7 +183,7 @@ stories:
   - action: travel_form
   - active_loop: travel_form
   - slot_was_set:
-    - address: 深圳
+    - city: 深圳
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
@@ -210,7 +210,7 @@ stories:
   - action: travel_form
   - active_loop: travel_form
   - slot_was_set:
-    - requested_slot: address
+    - requested_slot: city
   - slot_was_set:
     - city: 深圳
   - active_loop: null

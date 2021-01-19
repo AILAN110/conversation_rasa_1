@@ -16,6 +16,10 @@ intents:
 - form_in_city
 entities:
 - city
+slots:
+  city:
+    type: text
+    influence_conversation: false
 responses:
   utter_answer_affirm:
   - text: 嗯嗯，好的！
@@ -31,7 +35,7 @@ responses:
   - text: 虽然我有万般舍不得，但是天下没有不散的宴席~祝您安好！
   - text: 期待下次再见！
   - text: 嗯嗯，下次需要时随时记得我哟~
-  - text: 886
+  - text: "886"
   - text: 再见，记得想我哦
   - text: 拜拜，欢迎下次再见哦
   - text: see you!

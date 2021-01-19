@@ -8,15 +8,14 @@ pipeline:
 # # See https://rasa.com/docs/rasa/tuning-your-model for more information.
    - name: "JiebaTokenizer"
      dictionary_path: "data/jieba_userdict/jieba_userdict.txt"
-   - name: "RegexFeaturizer"
-   - name: "CRFEntityExtractor"
-   - name: "EntitySynonymMapper"
    - name: "CountVectorsFeaturizer"
    - name: "CountVectorsFeaturizer"
      analyzer: "char_wb"
      min_ngram: 1
      max_ngram: 4
    - name: "DIETClassifier"
+
+
 
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/
